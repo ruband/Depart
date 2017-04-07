@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Кафедра лесозащиты и древесиноведения-Лесохозяйственный факультет | БГТУ</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+<div id="wrapper">
+    <header>
+        <div id="headerGreen"></div>
+        <div id="site_title">
+            <div>
+                <ul class="menu">
+                    <li><a href="main.html">Главная</a></li>
+                    <li><a href="#">О кафедре</a>
+                        <ul>
+                            <li><a href="main.html">Историческая справка</a></li>
+                            <li><a href="about.html">Состав кафедры</a></li>
+                            <li><a href="#">Научная школа</a></li>
+                            <li><a href="#">Выпускники кафедры</a></li>
+                            <li><a href="#">Ксилотека</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Учебная работа</a>
+                        <ul>
+                            <li><a href="#">Абитуриенту</a></li>
+                            <li><a href="#">Студентам</a></li>
+                            <li><a href="#">Студентам заочного факультета</a></li>
+                            <li><a href="#">Подготовка магистрантов</a></li>
+                            <li><a href="#">Подготовка аспирантов</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#">Галерея</a></li>
+                    <li><a href="contact.html">Свяжитесь с нами</a></li>
+                </ul>
+            </div>
+            <div id="form">
+                <form id="quick-search" action="main.html" method="get">
+                    <input id="search" type="text" name="qsearch" placeholder="Поиск &#8230;"
+                           title="Начинайте вводить и нажмите ENTER">
+                </form>
+            </div>
+        </div>
+        <div id="logo_department">
+            <div id="name_department">
+                <a href="https://www.belstu.by/">Белорусский государственный технологический университет</a>
+                <h1>Кафедра лесозащиты и древесиноведения</h1>
+                <a href="https://lh.belstu.by/">Лесохозяйственный факультет</a>
+            </div>
+            <div id="logo">
+                <img id="img_logo" src="images/logo_department.jpg">
+            </div>
+        </div>
+        <div id="horLine"></div>
+    </header>
+<div id="content">
+    <div>
+        <h3>Свяжитесь с нами</h3>
+    </div>
+    <form  id="contact_form" action="" method="post" name="contact_form">
+        <div class="input-group1">
+            <div>
+                <input id="physPerson" type="radio" name="gender" value="male" checked>
+                <label for="physPerson">Физическое лицо</label>
+            </div>
+            <div>
+                <input id="natPerson" type="radio" name="gender" value="female">
+                <label for="natPerson">Юридическое лицо</label>
+            </div>
+        </div>
+        <div class="input-group">
+            <input type="text" id="firstName" required>
+            <label for="firstName">Имя</label>
+        </div>
+        <div class="input-group">
+            <input type="text" id="lastName" required>
+            <label for="lastName">Фамилия</label>
+        </div>
+        <div class="input-group">
+            <input type="text" name="postAddress" id="Address" required>
+            <label for="Address">Адрес места жительства (места пребывания)</label>
+        </div>
+        <div class="input-group">
+            <input type="email" name="e-mail" id="email" required>
+            <label for="email">E-mail</label>
+        </div>
+        <div class="input-group">
+            <input type="tel" id="phoneNumber">
+            <label for="phoneNumber">Номер телефона</label>
+        </div>
+        <div class="option-group">
+            <select name="listRecipirnt" size="1" id="listRecipirntInput" autofocus>
+                <option>Заведующий кафедрой</option>
+                <option>Одно окно</option>
+                <option>Ректор</option>
+                <option>Проректор по воспитательной работе</option>
+                <option>Разработчик сайта</option>
+            </select>
+            <label for="listRecipirntInput">Получатель сообщения</label>
+        </div>
+        <div class="textarea">
+            <textarea title="Введите текст сообщеня" name="message" cols="40" rows="6" ></textarea>
+            <label>Изложение сущности сообщения</label>
+        </div>
+        <div class="input-group1">
+            <input type="checkbox" name="appeal" id="appealInput" required>
+            <label for="appealInput"><a href="https://www.belstu.by/feedback_rules.html">С требованиями к электронным обращениям ознакомлен</a></label>
+        </div>
+        <input class="submit" type="submit" value="Отправить">
+    </form>
+</div>
+    <footer>
+        <div class="footer">
+            <h3>Контакты</h3>
+            <p><img class="img2" src="images/address.png"/>220006, г. Минск, ул. Свердлова, 13а</p>
+            <p><img class="img2" src="images/phone.png">Тел. +375 17 3275713</p>
+            <p><img class="img2" src="images/mail.png"/>Е-mail: lesaahova@belstu.by</p>
+        </div>
+        <div class="footer">
+            <h3>Полезные ресурсы</h3>
+            <p><a href="https://technolog.belstu.by/">Газета "Технолог"</a></p>
+            <p><a href="http://center.belstu.by/">Центр физико-химических методов исследования</a></p>
+            <p><a href="https://journalhte.belstu.by/">Журнал "Высшее техническое образование"</a></p>
+            <p><a href="https://trudy.belstu.by/">Журнал "Труды БГТУ"</a></p>
+        </div>
+        <div class="footer">
+            <h3>Мы в социальных сетях</h3>
+            <a href="https://www.facebook.com/bstuminsk"><img class="img1" src="images/f.png"></a>
+            <a href="https://vk.com/bstu_by"><img class="img1" src="images/vk.png"></a>
+            <a href="https://twitter.com/bstuminsk"><img class="img1" src="images/twitter.png"></a>
+            <a href="main.html"><img class="img1" src="images/ok.png"></a>
+        </div>
+    </footer>
+</div>
+    </body>
+</html>

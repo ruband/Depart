@@ -1,0 +1,90 @@
+@import "variables";
+
+.margin_bottom {
+  margin-bottom: 20px;
+}
+.heigt_border {
+  min-height: 20px;
+  border: 2px solid @greenColor;
+}
+
+#contact_form {
+  margin: auto;
+  .input-group1 {
+    .margin_bottom;
+  }
+  .input-group {
+    .margin_bottom;
+    input {
+      .heigt_border;
+    }
+  }
+  .option-group {
+    .margin_bottom;
+    select {
+      .heigt_border;
+    }
+  }
+  .textarea {
+    .margin_bottom;
+    textarea {
+      .heigt_border;
+    }
+  }
+
+  input:required {
+    + label {
+      &:before {
+        content: "*";
+        color: red;
+      }
+    }
+  }
+  .submit {
+    .heigt_border;
+    background: linear-gradient(to top, @greenColor, @yellowColor);
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    &:hover {
+      cursor: pointer;
+      background: @gradient;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .size_min {
+    min-height: 30px;
+    min-width: 300px;
+  }
+  .flex {
+    display: flex;
+    flex-direction: column;
+    order: 1;
+  }
+  #content {
+    display: flex;
+    flex-direction: column;
+    max-width: 550px;
+
+    input {
+      .size_min
+    }
+     select {
+      .size_min
+    }
+    .input-group {
+      .flex
+    }
+    .input-group1 {
+      .flex
+    }
+    .option-group {
+      .flex
+    }
+    .textarea {
+      .flex
+    }
+  }
+}

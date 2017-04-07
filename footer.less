@@ -1,0 +1,37 @@
+@import "variables";
+footer {
+  display: flex;
+  flex: 0 0 auto;
+  background: @gradient;
+  border-top: @hor_vertical_Line;
+  .img2 {
+    height: @size_img;
+    width: @size_img;
+  }
+  .img1 {
+    height: @size_img * 2;
+    width: @size_img * 2;
+  }
+}
+
+.footer {
+  margin: 2% auto;
+  h3 {
+    font-weight: normal;
+    text-align: center;
+  }
+  a {
+    color: @blueColor;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .footer {
+    max-width: 550px;
+    h3 {
+      font-size: 10pt;
+      font-weight: bold;
+    }
+  }
+}

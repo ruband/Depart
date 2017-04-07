@@ -1,0 +1,108 @@
+@import "variables";
+#wrapper {
+  max-width: 1500px;
+}
+header {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 auto;
+  #headerGreen {
+    height: 10px;
+    background-color: @greenColor;
+  }
+}
+
+#site_title {
+  display: flex;
+  background: @gradient;
+}
+
+#form {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#search {
+  border: 3px solid white;
+  border-radius: 25px;
+  margin: 10px;
+  padding-top: 10px;
+  padding-left: 8px;
+  width: 200px;
+  background: @grayColor url(images/search.gif) no-repeat 98% center;
+  box-shadow: 0 2px 7px 2px #C0C0C0 inset;
+  &:hover {
+    cursor: pointer;
+  }
+  &:focus {
+    outline: none;
+    box-shadow: none;
+    width: 300px;
+  }
+}
+
+#logo_department {
+  margin-top: 20px;
+  display: flex;
+  #name_department {
+    margin-right: auto;
+    h1 {
+      margin: 0;
+      color: @greenColor;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-size: 40pt;
+      text-shadow: 4px 2px @blackTextColor;
+    }
+    a {
+      text-decoration: none;
+      color: @blackTextColor;
+    }
+    #logo {
+      margin-left: auto;
+      #img_logo {
+        height: 172px;
+        width: 180px;
+      }
+    }
+  }
+}
+#horLine {
+  padding-top: 20px;
+  border-bottom: @hor_vertical_Line;
+}
+#content {
+  flex:  1 0 auto;
+  display: flex;
+  position: relative;
+  margin: 50px auto;
+}
+
+@media only screen and (max-width: 600px){
+  header {
+max-width: 550px;
+  }
+  #logo_department {
+    display: block;
+    #name_department {
+      h1 {
+        font-size: 20pt;
+        text-shadow: none;
+        text-align: center;
+      }
+      a {
+        display: block;
+text-align: center;
+      }
+    }
+    #img_logo {
+      display: block;
+      height: 140px;
+      width: 150px;
+      margin-left: auto;
+    }
+  }
+  #search {
+    height: 50px;
+  }
+}

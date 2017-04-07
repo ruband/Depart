@@ -1,0 +1,168 @@
+.font_italic {
+  font-style: italic;
+}
+.hide_block_none {
+  display: none;
+}
+.hide_block {
+  display: block;
+}
+.link {
+  text-decoration: none;
+  color: #33acfe;
+}
+#content {
+  flex-direction: column;
+}
+#content h1 {
+  font-weight: normal;
+}
+#content figure {
+  margin: 20px auto;
+  max-width: 1200px;
+  background-color: #f8f8f8;
+  box-shadow: inset 3px 3px 10px 0 #93b876;
+}
+#content figure img {
+  float: left;
+  padding-right: 20px;
+}
+#content figure a {
+  text-decoration: none;
+  color: #33acfe;
+}
+#content figure p {
+  margin: 0;
+  padding-bottom: 5px;
+  padding-left: 20px;
+}
+#content figure p span {
+  font-weight: bold;
+}
+#content figure p .phone {
+  font-style: italic;
+}
+#content figure p .phone:before {
+  content: "\260E      ";
+  font-weight: normal;
+  font-style: normal;
+}
+#content figure p .e-mail {
+  font-style: italic;
+}
+#content figure p .e-mail:before {
+  content: "\0040     ";
+  font-weight: normal;
+  font-style: normal;
+}
+#content figure p .address {
+  font-style: italic;
+}
+#content figure p .address:before {
+  content: "\1F582    ";
+  font-weight: normal;
+  font-style: normal;
+}
+.spoiler {
+  max-width: 1200px;
+  padding: 0 20px;
+}
+.spoiler .hide {
+  display: none;
+}
+.spoiler label {
+  display: none;
+  margin-top: -5px;
+  margin-bottom: 10px;
+  background: linear-gradient(to top, #D4D4D4, #f8f8f8);
+  padding-top: 3px;
+  color: #93b876;
+  cursor: pointer;
+  display: inline-block;
+  border: 2px solid #D3C737;
+  border-radius: 5px;
+  width: 150px;
+}
+.spoiler label:hover {
+  font-weight: bold;
+}
+.spoiler label:before {
+  background: linear-gradient(to top, #93b876, #D3C737);
+  box-shadow: 0 1px 1px 0 #000, 0 -1px 1px -1px #fff;
+  border: 1px;
+  color: #fff;
+  content: "\002B";
+  display: block;
+  float: left;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 5px;
+  text-align: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.spoiler div {
+  display: none;
+}
+.spoiler p {
+  margin: 0;
+  padding-bottom: 5px;
+  text-indent: 15pt;
+  text-align: justify;
+}
+.spoiler p span {
+  font-style: italic;
+  font-weight: bold;
+}
+.spoiler a {
+  text-decoration: none;
+  color: #33acfe;
+}
+.hide:checked + label {
+  color: #777;
+  border: none;
+  background: none;
+}
+.hide:checked + label:before {
+  content: "\2212";
+}
+.hide:checked + label:hover {
+  color: #93b876;
+}
+.hide:checked + label + div {
+  display: block;
+  background: #f8f8f8;
+  box-shadow: inset 3px 3px 10px #93b876;
+  margin-left: 100pt;
+  padding: 10px;
+  animation: fade ease-in 0.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #content h1 {
+    display: block;
+    text-align: center;
+  }
+  #content figure {
+    max-width: 500px;
+  }
+  #content figure h4 {
+    font-size: 12pt;
+  }
+  #content .spoiler {
+    max-width: 500px;
+  }
+  #content .spoiler label {
+    width: 400px;
+    height: 50px;
+    padding-top: 20px;
+  }
+}
